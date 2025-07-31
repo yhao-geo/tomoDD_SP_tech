@@ -104,8 +104,11 @@ cd cases/your_case_directory
 ## 参考文献
 
 如果您在研究中使用了本软件，请引用以下文献：
+
 Guo H, Zhang H, Froment B. Structural control on earthquake behaviors revealed by high-resolution Vp/Vs imaging along the Gofar transform fault, East Pacific Rise[J]. Earth and Planetary Science Letters, 2018, 499: 243-255.
+
 Zhang H, Thurber C, Bedrosian P. Joint inversion for vp, vs, and vp/vs at SAFOD, Parkfield, California[J]. Geochemistry, Geophysics, Geosystems, 2009, 10(11).
+
 Zhang H, Thurber C H. Double-difference tomography: The method and its application to the Hayward fault, California[J]. Bulletin of the Seismological Society of America, 2003, 93(5): 1875-1889.
 
 
