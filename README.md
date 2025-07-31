@@ -114,4 +114,8 @@ Zhang H, Thurber C H. Double-difference tomography: The method and its applicati
 
 ## 联系方式
 
-youngh_geo@mail.ustc.edu.cn
+杨浩
+
+中国科学技术大学地球和空间科学学院
+
+邮箱：youngh_geo@mail.ustc.edu.cn
