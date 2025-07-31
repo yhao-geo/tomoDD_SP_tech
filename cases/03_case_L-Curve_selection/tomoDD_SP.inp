@@ -1,0 +1,99 @@
+* RELOC.INP:
+*--- input file selection
+* cross correlation diff times:
+
+** cross correlation diff times(S_P)
+
+*catalog P diff times:
+Input_Files/dt.ct
+** catalog P diff times (S-P)
+Input_Files/dt_sp.ct
+* event file:
+Input_Files/event.dat
+*
+* station file:
+Input_Files/station.dat
+*
+*--- output file selection
+* original locations:
+Output_Files/tomoFDD.loc
+* relocations:
+Output_Files/tomoFDD.reloc
+* station information:
+Output_Files/stares.dat
+*initial residual information:
+Output_Files/initial.res
+*initial residual information:(S-P)
+Output_Files/initial_SP.res
+* residual information:
+Output_Files/res
+* residual information:(S-P)
+Output_Files/res_SP
+* source paramater information:
+
+* Velocity file
+Output_Files/Vel.out
+* Vp Model
+Output_Files/Vp_model.dat
+* Vs Model
+Output_Files/Vs_model.dat
+* Vp/Vs model
+Output_Files/VpVs_model.dat
+* Absolute file
+Input_Files/absolute.dat
+* absolute data (S-P)
+Input_Files/absolute_sp.dat
+*
+*--- data type selection: 
+* IDAT:  0 = sichuannthetics; 1= cross corr; 2= catalog; 3= cross & cat 
+* IPHA: 1= P; 2= S; 3= P&S
+* DIST:max dist [km] between cluster centroid and station 
+* IDAT   IPHA   DIST
+   2      3     8000
+*
+*--- event clustering:
+* OBSCC:    min # of obs/pair for crosstime data (0= no clustering)
+* OBSCT:    min # of obs/pair for network data (0= no clustering)
+* OBSCC  OBSCT   Air_dep 
+    0      0      -4.0 
+*
+*--- solution control:
+* ISTART:  	1 = from single source; 2 = from network sources
+* ISOLV:	1 = SVD, 2=lsqr
+* NSET:      	number of sets of iteration with specifications following
+* RayTracing    1=Hols's ; 2=Lomax's
+*  ISTART  ISOLV  NSET RayTracing  PSratio  DISTratio
+     0       2     1     2           10.0     0.05
+* iuses iuseq invdel  stepl  
+    2     0     0       0.5     
+* wlat   wlon   rota   CC_format 
+  30.3   103.3   0        1      
+* minVp maxVp minVs maxVs minVpVs maxVpVs maxdVp maxdVs maxdVpVs
+   0.5   8.5  0.01    6    1.4     3.0     0.4    0.2    0.05
+* wt_vp1 wt_vp2  wt_vp3 wt_vs1 wt_vs2 wt_vs3 wt_vpvs1 wt_vpvs2 wt_vpvs3
+   0.5   0.5    0.5    0.5    0.5    0.5     0.5     0.5      0.5
+*
+*--- data weighting and re-weighting: 
+* NITER: 		last iteration to used the following weights
+* WTCCP, WTCCS:		weight cross P, S 
+* WTCTP, WTCTS:		weight catalog P, S 
+* WRCC, WRCT:		residual threshold in sec for cross, catalog data 
+* WDCC, WDCT:  		max dist [km] between cross, catalog linked pairs
+* DAMP:    		damping (for lsqr only) 
+*       ---  CROSS DATA ----- ----CATALOG DATA ----
+* NITER WTCCP WTCCS WRCC WDCC WTCTP WTCTS WRCT WDCT WTDD DAMP JOINT THRE_vp THRES_vpvs
+   2     0.01  0.01   -9   -9  0.1  0.08      6  -9  10.0 170   1    0.05    0.05
+*    1     0.01  0.01   -9   -9  0.1  0.08      6  -9  10.0 50   0    0.05    0.05
+*    1     0.01  0.01   10   -9  0.1  0.08      5  -9  10.0 150   1    0.05    0.05
+*    1     0.01  0.01   10   -9  0.1  0.08      5  -9  10.0 50   0    0.05    0.05
+*    1     0.01  0.01   -9   -9    1   0.8      5  -9    .1 160   1    0.05    0.05
+*    1     0.01  0.01   -9   -9    1   0.8      5  -9    .1 40   0    0.05    0.05
+*    1     0.01  0.01   10   -9    1   0.8      4  -9    .1 150   1    0.05    0.05
+*    1     0.01  0.01   10   -9    1   0.8      4  -9    .1 40   0    0.05    0.05
+*    3     0.01  0.01   10   -9    1   0.8      4  -9     0 40   0    0.05    0.05
+*--- event selection:
+* CID: 	cluster to be relocated (0 = all)
+* ID:	cuspids of event to be relocated (8 per line)
+* CID    
+    0      
+* ID

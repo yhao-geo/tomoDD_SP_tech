@@ -1,0 +1,53 @@
+name: tomoddsp-tech
+channels:
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1
+  - _openmp_mutex=5.1
+  - bzip2=1.0.8
+  - ca-certificates=2025.2.25
+  - expat=2.7.1
+  - ld_impl_linux-64=2.40
+  - libcxx=17.0.6
+  - libcxxabi=17.0.6
+  - libffi=3.4.4
+  - libgcc-ng=11.2.0
+  - libgomp=11.2.0
+  - libstdcxx-ng=11.2.0
+  - libxcb=1.17.0
+  - ncurses=6.4
+  - openssl=3.0.17
+  - pip=25.1
+  - pthread-stubs=0.3
+  - python=3.9.23
+  - readline=8.2
+  - setuptools=78.1.1
+  - sqlite=3.50.2
+  - tk=8.6.14
+  - wheel=0.45.1
+  - xorg-libx11=1.8.12
+  - xorg-libxau=1.0.12
+  - xorg-libxdmcp=1.1.5
+  - xorg-xorgproto=2024.1
+  - xz=5.6.4
+  - zlib=1.2.13
+  - pip:
+      - contourpy==1.3.0
+      - cycler==0.12.1
+      - fonttools==4.59.0
+      - importlib-resources==6.5.2
+      - kiwisolver==1.4.7
+      - matplotlib==3.9.4
+      - numpy==2.0.2
+      - packaging==25.0
+      - pandas==2.3.1
+      - pillow==11.3.0
+      - pyparsing==3.2.3
+      - python-dateutil==2.9.0.post0
+      - pytz==2025.2
+      - scipy==1.13.1
+      - six==1.17.0
+      - tqdm==4.67.1
+      - tzdata==2025.2
+      - zipp==3.23.0
+prefix: /home/youngh/anaconda3/envs/tomoddsp-tech
