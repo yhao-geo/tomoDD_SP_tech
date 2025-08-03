@@ -7,7 +7,7 @@ c MOBS:  Max number of phases (P&S) per eventer event.
 
 	integer	MEV, MSTA, MOBS
 
-	parameter(MEV=    200000,    
-     &		MSTA=   3000,		
-     &		MOBS=   1000) 
+	parameter(MEV=    1000,    
+     &		MSTA=   200,		
+     &		MOBS=   100) 
 
