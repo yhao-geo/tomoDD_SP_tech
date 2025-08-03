@@ -22,18 +22,18 @@ c Define variables for size calculations
         integer*8 s_tp, s_tpi, s_ts, s_tsi
 
 c parameters for medium size problems (e.g. : SUN ULTRA-2, 768 MB RAM)
-       parameter(MAXEVE=  70000,    
-     &          MAXDATA=  20000000,
-     &          MAXEVE0=  2,	
-     &          MAXDATA0= 1,	
-     &          MAXLAY=   40,		
-     &          MAXSTA=   700,	
-     &          MAXOBS=   200,
-     &          MAXGRID=  1,	
+       parameter(MAXEVE=  1000,    
+     &          MAXDATA=  100000,
+     &          MAXEVE0=  2, 
+     &          MAXDATA0= 1, 
+     &          MAXLAY=   40,  
+     &          MAXSTA=   200, 
+     &          MAXOBS=   100,
+     &          MAXGRID=  1, 
      &          MAXSEG=   1,
      &          MAXND=    200,
      &          MAXNODE=  300,
-     &          MAXCL=    50)		
+     &          MAXCL=    50)  		
 
         real,allocatable ::            tmp_vp(:,:,:)
         integer,allocatable ::         tmp_vp_index(:,:,:)
