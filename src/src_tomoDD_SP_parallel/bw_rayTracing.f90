@@ -734,7 +734,7 @@
 
 ! =============================================================================
   subroutine intmap( isp, x, y, z, ip, jp, kp, &
-                     nz,bld,xl,yl,zl,ixkms,iykms,izkms,ixloc,iyloc,izloc,rayError1)
+                     nz,bld,xl,yl,zl,ixkms,iykms,izkms,ixloc,iyloc,izloc)
 ! =============================================================================
 ! Modified by W. Prothero so a single call can get the indices.
 ! For given coordinate(x,y,z), return the index of vel(ip,jp,kp)
