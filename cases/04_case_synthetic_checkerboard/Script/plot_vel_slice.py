@@ -61,7 +61,7 @@ from matplotlib.colors import LinearSegmentedColormap
 from scipy.interpolate import interp2d  # 替换griddata
 import os
 import sys
-sys.path.append('../../../../tools/')
+sys.path.append('../../../tools/')
 import ModelingTools.MODTools as modt
 
 # ========== 参数设置 ==========

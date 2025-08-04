@@ -56,7 +56,7 @@ import matplotlib.pyplot as plt
 from scipy.interpolate import interp2d
 import os
 import sys
-sys.path.append('../../../../tools/')
+sys.path.append('../../../tools/')
 import ModelingTools.MODTools as modt
 
 # ========== 参数设置 ==========

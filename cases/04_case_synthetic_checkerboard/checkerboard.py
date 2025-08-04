@@ -36,7 +36,7 @@ import subprocess
 import logging
 
 # 添加tools路径
-sys.path.append('../../../../tools/')
+sys.path.append('../../tools/')
 import ModelingTools.MODTools as modt
 
 class CheckerboardTest:

@@ -56,7 +56,7 @@ import matplotlib.pyplot as plt
 from scipy.interpolate import interp2d
 import os
 import sys
-sys.path.append('../../../../tools/')
+sys.path.append('../../../tools/')
 import ModelingTools.MODTools as modt
 
 # ========== 参数设置 ==========
@@ -106,7 +106,7 @@ event_dep = event_data[:, 3]
 # ========== 均匀网格 ==========
 y_min, y_max = Y.min(), Y.max()
 z_min, z_max = Z.min(), Z.max()
-nx_uni, nz_uni = 50, 30  # 可调分辨率
+ny_uni, nz_uni = 50, 30  # 可调分辨率
 y_uni = np.linspace(y_min, y_max, ny_uni)
 z_uni = np.linspace(z_min, z_max, nz_uni)
 Y_uni, Z_uni = np.meshgrid(y_uni, z_uni)
