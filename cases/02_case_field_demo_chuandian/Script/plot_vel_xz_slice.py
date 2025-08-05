@@ -53,6 +53,8 @@ Copyright (c) 2025 Yang Hao. All rights reserved.
 
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.use('Agg')
 from scipy.interpolate import interp2d  # 替换griddata
 import os
 import sys

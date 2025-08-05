@@ -60,6 +60,8 @@ Copyright (c) 2025 Yang Hao. All rights reserved.
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.use('Agg')
 from pathlib import Path
 import math
 import logging

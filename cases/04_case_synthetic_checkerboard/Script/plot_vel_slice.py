@@ -58,6 +58,8 @@ import datetime
 from scipy.stats import gaussian_kde
 import matplotlib as mpl
 from matplotlib.colors import LinearSegmentedColormap
+import matplotlib
+matplotlib.use('Agg')
 from scipy.interpolate import interp2d  # 替换griddata
 import os
 import sys

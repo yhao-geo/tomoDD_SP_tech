@@ -56,6 +56,8 @@ from typing import List, Tuple
 import matplotlib.pyplot as plt
 import pandas as pd
 from matplotlib.ticker import MaxNLocator
+import matplotlib
+matplotlib.use('Agg')
 
 class DampingSmoothingSelection:
     def __init__(self, plot_only=False):

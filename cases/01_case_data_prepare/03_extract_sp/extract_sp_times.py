@@ -48,6 +48,8 @@ from pathlib import Path
 from typing import List, Dict, Tuple, Optional
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.use('Agg')
 from matplotlib.ticker import MaxNLocator
 from scipy import stats
 

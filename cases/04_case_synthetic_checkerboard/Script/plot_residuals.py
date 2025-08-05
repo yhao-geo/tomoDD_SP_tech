@@ -45,6 +45,8 @@ Copyright (c) 2025 Yang Hao. All rights reserved.
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.use('Agg')
 from scipy import stats
 import os
 

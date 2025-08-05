@@ -54,6 +54,8 @@ Copyright (c) 2025 Yang Hao. All rights reserved.
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
+import matplotlib
+matplotlib.use('Agg')
 import datetime
 from scipy.stats import gaussian_kde
 import matplotlib as mpl
