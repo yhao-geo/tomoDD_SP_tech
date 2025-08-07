@@ -71,8 +71,8 @@ conda activate tomoddsp-tech
 
 ### 3. 运行程序
 ```bash
-cd cases/your_case_directory
-../src/src_tomoDD_SP_parallel/tomoDD_SP
+cd your_case_directory
+./tomoDD_SP tomoDD_SP.inp
 ```
 
 ### 4. 结果分析
@@ -103,7 +103,7 @@ cd cases/your_case_directory
 
 ## 参考文献
 
-如果您在研究中使用了本软件，请引用以下文献：
+如果您在研究中使用了本软件，请引用以下文献，本程序官方名为 基于波速比一致性约束的双差层析成像(tomoDDMC)：
 
 Guo H, Zhang H, Froment B. Structural control on earthquake behaviors revealed by high-resolution Vp/Vs imaging along the Gofar transform fault, East Pacific Rise[J]. Earth and Planetary Science Letters, 2018, 499: 243-255.
 
