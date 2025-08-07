@@ -197,11 +197,11 @@ class DampingSmoothingSelection:
                 [self.program, temp_inp],
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE,
-                text=True
+                encoding='latin-1'
             )
             
             # 保存输出
-            with open(output, 'w') as f:
+            with open(output, 'w',encoding='latin-1') as f:
                 f.write(result.stdout)
             
             # 删除临时输入文件
