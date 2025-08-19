@@ -49,10 +49,10 @@ c        a2=0.08 ! Control the constant noise level for S
 c        b=0.02 ! Control the random noise level for P wave
 c        c=0.03 ! Control the random noise level for S wave
 
-        a1=0.1 ! Control the constant noise level for P
+        a1=0.0 ! Control the constant noise level for P
         a2=0.0 ! Control the constant noise level for S
-        b=0.2 ! Control the random noise level for P wave
-        c=0.2 ! Control the random noise level for S wave
+        b=0.0 ! Control the random noise level for P wave
+        c=0.0 ! Control the random noise level for S wave
 
 
 	call freeunit(log1)
